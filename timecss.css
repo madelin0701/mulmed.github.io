@@ -1,0 +1,55 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #1a2238;
+    color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 6px 12px;
+    background: #ff6a3d;
+    color: #eaeaea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 0;
+}
+
+.logo-title {
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: #ff6a3d;
+    transform: rotate(2deg);
+}
+
+nav ul{
+    display: flex;
+    padding: 20px;
+}

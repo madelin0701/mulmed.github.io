@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form form {
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 300px;
+    box-shadow: 3px 3px 3px rgb(220, 220, 220),
+    -3px -3px 3px rgb(220,220,220);
+    border: 1px solid rgb(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form form input{
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(0,0,0,.2);
+    border-radius: 5px;
+    color: rgb(0,0,0,.8)
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder{
+    padding-left: 4px;
+}
+
+.form form select{
+    width: 100%;
+    height: 27px;
+    border: 1px solid rgb(0,0,0,.2);
+    border-radius: 4px;
+    color: rgb(0,0,0,.8);
+}
+
+.submitButton input[type='submit']{
+    background: rgb(60,120,200);
+    cursor: pointer;
+    width: 200px;
+    border-radius: 20px;
+    height: 30px;
+    border: transparent;
+    color: #fff;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.submitButton input[type='submit']:hover{
+    transform: scale(1.12);
+
+}
+.login a {
+    text-decoration: underline;
+    color: blue;
+}

@@ -1,0 +1,72 @@
+<html>
+    <head> 
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>WEB MULTIMEDIA</title>
+        <link rel="stylesheet" href="styleuser.css"/>
+    </head>
+    <body>
+            <header>
+                <div class="logo">
+                    <img src="asset/icon/desainlogo.jpg" alt="logo" class="logo-img"/>
+                    <h1 class="logo">MULTIMEDIA</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#jasa">INFORMASI</a></li>
+                        <li class="materi-page" onclick="redirMateri()"><a href="materi.html">MATERI</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1y-hDSGFkN_bfDv0RgpUbdf1Vtpgxqx9l?usp=share_link">GOOGLE DRIVE</a></li>
+                        <li class="login-page" onclick="redirMateri()"><a href="logout.php">LOGOUT</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-cta" onclick="redirTime()">Time Tracker</button>
+            </header>
+            <div class="container">
+                <div class="intro">
+                    <p class="title" >Hallo, Selamat datang di kelas XI Multimedia </p>
+                    <p class="description">Produk Kreatif dan Kewirausahaan</p>
+                    <img src="asset/foto/pic1.png" alt="pic1" class="img-foto"/>
+                </div>
+            </div>
+            <div class="parallax">
+                <div class="tentang">
+                    <p class="title" >Untuk melihat materi dalam versi flipbook</p>
+                    <p class="description">Kamu dapat mengakses flipbook di bawah sini.</p>
+                    <div class="mt-10">
+                        <button class="btn-cta" onclick="redirWebsite()">Buka Flipbook</button>
+                    </div>
+                </div>
+                <div class="container">
+                        <div class="card" id="jasa">
+                            <div class="card-item">
+                                <img src="asset/icon/rating.png" alt="icon 1" class="icon"/>
+                                <p class="card-title" >Website ini dibuat untuk mempermudah siswa dalam mengakses materi</p>
+                                <p class="card-description">Materi tersedia dalam tutorial video pembelajaran.</p>
+                            </div>
+                            <div class="card-item">
+                                <img src="asset/icon/wrench.png" alt="icon 1" class="icon"/>
+                                <p class="card-title" >Mengumpulkan Project</p>
+                                <p class="card-description">Siswa dapat mengumpulkan tugas pada menu Google Drive.</p>
+                            </div>
+                            <div class="card-item">
+                                <img src="asset/icon/24-hours.png" alt="icon 1" class="icon"/>
+                                <p class="card-title" >Time Tracker</p>
+                                <p class="card-description">Time Tracker dibuat untuk melihat proses siswa dalam mengerjakan project.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <footer>
+                <p class="title" >&copy Pendidikan Teknologi Informasi</p>
+            </footer>
+    <script>
+        function redirWebsite() {
+            window.location.href="https://heyzine.com/flip-book/8c48fe856e.html"
+        }
+        function redirTime() {
+            window.location.href="timetracking.html"
+        }
+    </script>
+    </body>
+</html>
